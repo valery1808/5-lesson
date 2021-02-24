@@ -1,0 +1,162 @@
+*
+{
+    box-sizing: border-box;
+}
+
+@font-face
+{
+    font-family: 'Muller';
+    font-family: 'Muller-Bold';
+    src: url(../fonts/MullerBold.woff) format('woff'),
+    url(../fonts/MullerBold.woff2) format('woff2');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face
+{
+    font-family: 'Muller';
+    font-family: 'Muller-Light';
+    src: url(../fonts/MullerLight.woff) format('woff'),
+    url(../fonts/MullerLight.woff2) format('woff2');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face
+{
+    font-family: 'Muller';
+    font-family: 'Muller-Medium';
+    src: url(../fonts/MullerMedium.woff) format('woff'),
+    url(../fonts/MullerMedium.woff2) format('woff2');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face
+{
+    font-family: 'Muller';
+    font-family: 'Muller-Regular';
+    src: url(../fonts/MullerRegular.woff) format('woff'),
+    url(../fonts/MullerRegular.woff2) format('woff2');
+    font-style: normal;
+    font-weight: normal;
+}
+
+a
+{
+    text-decoration: none;
+    color: #d1a54c;
+}
+
+ul 
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img 
+{
+    max-width: 100%;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+.container
+{
+    max-width: 1168px;
+    margin-right: 145px;
+    margin-left: 145px;
+    padding-left: auto;
+    padding-right: auto;
+}
+
+.btn
+{
+    display: inline-block;
+    padding: 15px 25px;
+    line-height: 1;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: white;
+    background-color: #3172b9;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.text-center
+{
+    align-items: center;
+}
+
+/* Header */
+
+
+
+/* Footer */
+
+.footer
+{
+    height: 340px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.footer-container
+{
+    display: flex;
+    border-radius: 10px;
+    justify-content: space-between;
+    background-color: #333333;
+    background-image: url(../img/Слой.png);
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position-x: 728px;
+    background-position-y: bottom;
+    color: #e4e4e4;
+    padding: 40px 48px 50px 48px;
+    line-height: 20px;
+}
+
+.footer-info
+{
+    max-width: 300px;
+
+}
+
+.footer-info-law
+{
+    margin-top: 40px;
+}
+
+.footer-info-politicaly
+{
+    margin-top: 40px;
+}
+
+.footer-address
+{
+    max-width: 370px;
+}
+
+.footer-address-number
+{
+    margin-top: 40px;
+}
+
+.footer-address-mail
+{
+    margin-top: 40px;
+}
+
+.footer-social
+{
+    margin-top: 16px;
+}
+.footer-social-icon
+{
+    line-height: 2.5em;
+}
