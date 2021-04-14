@@ -163,12 +163,14 @@ p
 
 .heading-bottom-box
 {
-    margin-right: 22px;
+    margin-right: 0;
+    margin-left: 15px;
     padding-left: 20px;
     min-width: 340px;
     height: 45px;
     border: 0;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
     background-color: #f1f1f1;
 }
 
@@ -178,7 +180,7 @@ p
 }
 .heading-nav-item:not(:first-child)
 {
-    margin-left: 40px;
+    margin-left: 20px;
 }
 
 .heading-nav-link
@@ -187,7 +189,20 @@ p
     color: black;
 }
 
-
+.btn-search
+{
+    margin-right: 15px;
+    margin-left: 0;
+    height: 45px;
+    min-width: 25px;
+    background-image: url(../img/поиск.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 0;
+    background-color: #f1f1f1;
+}
 /* INFO */
 
 .info-container
