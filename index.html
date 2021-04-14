@@ -18,7 +18,7 @@
                     </div>
                     <div class="header-left-telephone">
                         <a href="tel:+7495322544834" class="heading-tel">
-                            +7 495 322 54 48 34
+                            <strong>+7 495 322 54 48 34</strong>
                         </a>
                     </div>
                 <div class="header-right">
@@ -60,9 +60,9 @@
                         </li>
                     </ul>
                 </nav>
-                <div class="heading-bottom-box">
-                    <input type="search" value="Поиск" class="heading-search">
-                </div>
+                    <form action="" method="get">
+                        <input name="s" placeholder="Поиск" type="search" class="heading-bottom-box">
+                      </form>
             </div>
         </div>
     </header>
@@ -73,19 +73,20 @@
                     <h2 class="section-heading text-center">
                         Быстрая бронь
                     </h2>
-                    <form action="" class="section-form">
-                        <div class="section-form-list"><input type="text" name="Город" value="Город"></div>
-                        <div class="section-form-list"><input type="text" name="Категория номера" value="Категория номера"></div>
-                        <div class="section-form-list"><input type="text" name="Дата заселения" value="Дата заселения"></div>
-                        <div class="section-form-list"><input type="text" name="Количество ночей" value="Количество ночей"></div>
-                        <div class="section-form-list"><input type="text" name="Количество гостей" value="Количество гостей"></div>
-                        <span class="section-btn">
-                            <input type="submit" value="Найти номер" class="section-btn-submit">
+                    <div class="section-form">
+                    <form action="https://jsonplaceholder.typicode.com/posts" method="POST">
+                        <input type="text" name="city" placeholder="Город" class="section-form-item">
+                        <input type="text" name="category" placeholder="Категории номера" class="section-form-item"> 
+                        <input type="date" name="date" placeholder="Дата заселения" class="section-form-item">
+                        <input type="number" name="nights" placeholder="Количество ночей" class="section-form-item">
+                        <input type="number" name="guests" required placeholder="Количество гостей" class="section-form-item">
+                        <input type="submit" value="Найти номер" class="section-btn-submit">
                         </span>
                         <span class="section-info-request">
-                            9 756 предложений доступно
+                            <span class="info-request-color"> 9 756 </span>предложений доступно
                         </span>
                     </form>
+                </div>
                 </div>
                 <div class="section-offer">
                     <h2 class="section-sale-heading">
@@ -123,7 +124,7 @@
                         <img src="../5-lesson/img/1-1.png">
                         <div class="services-link-main">
                             <a href="" class="section-services-link">
-                                Эксклюзивное обслуживание &#8250
+                                <h3>Эксклюзивное обслуживание &#8250</h3>
                             </a>
                             <p class="section-services-desc">
                                 Равным образом постоянный количественный рост и сфера нашей активности
@@ -132,30 +133,36 @@
                     </li>
                     <li class="section-services-item">
                         <img src="../5-lesson/img/1-2.png">
-                        <a href="" class="section-services-link">
-                            Аренда банкетных залов &#8250
-                        </a>
-                        <p class="section-services-desc">
-                            Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм.
-                        </p>
+                        <div class="services-link-main">
+                            <a href="" class="section-services-link">
+                                <h3>Аренда банкетных залов &#8250</h3>
+                            </a>
+                            <p class="section-services-desc">
+                                Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм.
+                            </p>
+                        </div>
                     </li>
                     <li class="section-services-item">
                         <img src="../5-lesson/img/1-3.png">
-                        <a href="" class="section-services-link">
-                            Сауны, бассейны, бани, фитнес-залы &#8250
-                        </a>
-                        <p class="section-services-desc">
-                            Не следует, однако забывать, что начало повседневной работы по формированию позиции
-                        </p>
+                        <div class="services-link-main">
+                            <a href="" class="section-services-link">
+                                <h3>Сауны, бассейны, бани, фитнес-залы &#8250</h3>
+                            </a>
+                            <p class="section-services-desc">
+                                Не следует, однако забывать, что начало повседневной работы по формированию позиции
+                            </p>
+                        </div>
                     </li>
                     <li class="section-services-item">
                         <img src="../5-lesson/img/1-4.png">
-                        <a href="" class="section-services-link">
-                            Охраняемые автомобильные стоянки &#8250
-                        </a>
-                        <p class="section-services-desc">
-                            Не следует, однако забывать, что начало повседневной работы по формированию позиции
-                        </p>
+                        <div class="services-link-main">
+                            <a href="" class="section-services-link">
+                                <h3>Охраняемые автомобильные стоянки &#8250</h3>
+                            </a>
+                            <p class="section-services-desc">
+                                Не следует, однако забывать, что начало повседневной работы по формированию позиции
+                            </p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -227,7 +234,7 @@
                         <img src="../5-lesson/img/2-1.png">
                             <div class="placing-item-text">
                                 <p>
-                                    от <b>4 698 р</b> / ночь
+                                    <span class="grey">от </span> <span class="big"> 4 698 р</span> / ночь
                                 <span class="section-placing-rating">
                                     <svg class="rating-star" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="13" viewBox="0 0 14 13"><metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?><x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        "><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:about=""/></rdf:RDF></x:xmpmeta><?xpacket end="w"?></metadata><image id="star_копия" data-name="star копия" width="14" height="13" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAMAAACuAq9NAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAWlBMVEX////pzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpMAAAAOnU9GAAAAHHRSTlMAArJZBNwBHXp11PfVyiMcJT5rludxYNh4CwrXpkJicAAAAAFiS0dEHesDcZEAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfkCxIWOQWqhPvGAAAAYElEQVQI103MSRKAIAADwQDigiII7ub/71QpKZxbXwZ4E1IKlBSpiipN6upD3bR8apv6QWd6fvVDB8tfFqMu0iPgTJZx78pn+nSeMqfEkBkSIzkvy0zGxHXbD+DcrxW4AWm8CrDOFBljAAAAAElFTkSuQmCC"/></svg>
                                     <svg class="rating-star" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="13" viewBox="0 0 14 13"><metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?><x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        "><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:about=""/></rdf:RDF></x:xmpmeta><?xpacket end="w"?></metadata><image id="star_копия" data-name="star копия" width="14" height="13" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAMAAACuAq9NAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAWlBMVEX////pzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpMAAAAOnU9GAAAAHHRSTlMAArJZBNwBHXp11PfVyiMcJT5rludxYNh4CwrXpkJicAAAAAFiS0dEHesDcZEAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfkCxIWOQWqhPvGAAAAYElEQVQI103MSRKAIAADwQDigiII7ub/71QpKZxbXwZ4E1IKlBSpiipN6upD3bR8apv6QWd6fvVDB8tfFqMu0iPgTJZx78pn+nSeMqfEkBkSIzkvy0zGxHXbD+DcrxW4AWm8CrDOFBljAAAAAElFTkSuQmCC"/></svg>
@@ -239,7 +246,7 @@
                                 <p>
                                     Lagoona española
                                 </p>
-                                <p>
+                                <p class="grey">
                                     Барселона, Испания
                                 </p>
                                 <a href="" class="section-placing-btn">
@@ -251,7 +258,7 @@
                         <img src="../5-lesson/img/2-2.png">
                             <div class="placing-item-text">
                                 <p>
-                                    от <b>5 148 р</b> / ночь
+                                    <span class="grey"> от</span> <span class="big"> 5 148 р</span> / ночь
                                 <span class="section-placing-rating">
                                     <svg class="rating-star" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="13" viewBox="0 0 14 13"><metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?><x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        "><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:about=""/></rdf:RDF></x:xmpmeta><?xpacket end="w"?></metadata><image id="star_копия" data-name="star копия" width="14" height="13" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAMAAACuAq9NAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAWlBMVEX////pzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpMAAAAOnU9GAAAAHHRSTlMAArJZBNwBHXp11PfVyiMcJT5rludxYNh4CwrXpkJicAAAAAFiS0dEHesDcZEAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfkCxIWOQWqhPvGAAAAYElEQVQI103MSRKAIAADwQDigiII7ub/71QpKZxbXwZ4E1IKlBSpiipN6upD3bR8apv6QWd6fvVDB8tfFqMu0iPgTJZx78pn+nSeMqfEkBkSIzkvy0zGxHXbD+DcrxW4AWm8CrDOFBljAAAAAElFTkSuQmCC"/></svg>
                                     <svg class="rating-star" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="13" viewBox="0 0 14 13"><metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?><x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        "><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:about=""/></rdf:RDF></x:xmpmeta><?xpacket end="w"?></metadata><image id="star_копия" data-name="star копия" width="14" height="13" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAMAAACuAq9NAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAWlBMVEX////pzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpMAAAAOnU9GAAAAHHRSTlMAArJZBNwBHXp11PfVyiMcJT5rludxYNh4CwrXpkJicAAAAAFiS0dEHesDcZEAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfkCxIWOQWqhPvGAAAAYElEQVQI103MSRKAIAADwQDigiII7ub/71QpKZxbXwZ4E1IKlBSpiipN6upD3bR8apv6QWd6fvVDB8tfFqMu0iPgTJZx78pn+nSeMqfEkBkSIzkvy0zGxHXbD+DcrxW4AWm8CrDOFBljAAAAAElFTkSuQmCC"/></svg>
@@ -263,7 +270,7 @@
                                 <p>
                                     Lagoona son típicas
                                 </p>
-                                <p>
+                                <p class="grey">
                                     Барселона, Испания
                                 </p>
                                 <a href="" class="section-placing-btn">
@@ -275,7 +282,7 @@
                         <img src="../5-lesson/img/2-3.png">
                             <div class="placing-item-text">
                                 <p>
-                                    от <b>6 254 р</b> / ночь
+                                    <span class="grey"> от</span> <span class="big">6 254 р</span> / ночь
                                 <span class="section-placing-rating">
                                     <svg class="rating-star" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="13" viewBox="0 0 14 13"><metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?><x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        "><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:about=""/></rdf:RDF></x:xmpmeta><?xpacket end="w"?></metadata><image id="star_копия" data-name="star копия" width="14" height="13" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAMAAACuAq9NAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAWlBMVEX////pzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpMAAAAOnU9GAAAAHHRSTlMAArJZBNwBHXp11PfVyiMcJT5rludxYNh4CwrXpkJicAAAAAFiS0dEHesDcZEAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfkCxIWOQWqhPvGAAAAYElEQVQI103MSRKAIAADwQDigiII7ub/71QpKZxbXwZ4E1IKlBSpiipN6upD3bR8apv6QWd6fvVDB8tfFqMu0iPgTJZx78pn+nSeMqfEkBkSIzkvy0zGxHXbD+DcrxW4AWm8CrDOFBljAAAAAElFTkSuQmCC"/></svg>
                                     <svg class="rating-star" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="13" viewBox="0 0 14 13"><metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?><x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        "><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:about=""/></rdf:RDF></x:xmpmeta><?xpacket end="w"?></metadata><image id="star_копия" data-name="star копия" width="14" height="13" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAMAAACuAq9NAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAWlBMVEX////pzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpMAAAAOnU9GAAAAHHRSTlMAArJZBNwBHXp11PfVyiMcJT5rludxYNh4CwrXpkJicAAAAAFiS0dEHesDcZEAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfkCxIWOQWqhPvGAAAAYElEQVQI103MSRKAIAADwQDigiII7ub/71QpKZxbXwZ4E1IKlBSpiipN6upD3bR8apv6QWd6fvVDB8tfFqMu0iPgTJZx78pn+nSeMqfEkBkSIzkvy0zGxHXbD+DcrxW4AWm8CrDOFBljAAAAAElFTkSuQmCC"/></svg>
@@ -287,11 +294,11 @@
                                 <p>
                                     Lagoona de la guerra
                                 </p>
-                                <p>
+                                <p class="grey">
                                     Барселона, Испания
                                 </p>
                                 <p class="section-placing-btn">
-                                    <a href="" class="section-placing-button">
+                                    <a href="" class="section-placing-btn">
                                     Номера
                                     </a>
                                 </p>
@@ -301,7 +308,7 @@
                         <img src="../5-lesson/img/2-4.png">
                             <div class="placing-item-text">
                                 <p>
-                                    от <b>6 320 р</b> / ночь
+                                   <span class="grey"> от</span> <span class="big">6 320 р</span> / ночь
                                 <span class="section-placing-rating">
                                     <svg class="rating-star" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="13" viewBox="0 0 14 13"><metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?><x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        "><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:about=""/></rdf:RDF></x:xmpmeta><?xpacket end="w"?></metadata><image id="star_копия" data-name="star копия" width="14" height="13" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAMAAACuAq9NAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAWlBMVEX////pzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpMAAAAOnU9GAAAAHHRSTlMAArJZBNwBHXp11PfVyiMcJT5rludxYNh4CwrXpkJicAAAAAFiS0dEHesDcZEAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfkCxIWOQWqhPvGAAAAYElEQVQI103MSRKAIAADwQDigiII7ub/71QpKZxbXwZ4E1IKlBSpiipN6upD3bR8apv6QWd6fvVDB8tfFqMu0iPgTJZx78pn+nSeMqfEkBkSIzkvy0zGxHXbD+DcrxW4AWm8CrDOFBljAAAAAElFTkSuQmCC"/></svg>
                                     <svg class="rating-star" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="13" viewBox="0 0 14 13"><metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?><x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        "><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:about=""/></rdf:RDF></x:xmpmeta><?xpacket end="w"?></metadata><image id="star_копия" data-name="star копия" width="14" height="13" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAMAAACuAq9NAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAWlBMVEX////pzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpMAAAAOnU9GAAAAHHRSTlMAArJZBNwBHXp11PfVyiMcJT5rludxYNh4CwrXpkJicAAAAAFiS0dEHesDcZEAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfkCxIWOQWqhPvGAAAAYElEQVQI103MSRKAIAADwQDigiII7ub/71QpKZxbXwZ4E1IKlBSpiipN6upD3bR8apv6QWd6fvVDB8tfFqMu0iPgTJZx78pn+nSeMqfEkBkSIzkvy0zGxHXbD+DcrxW4AWm8CrDOFBljAAAAAElFTkSuQmCC"/></svg>
@@ -313,19 +320,21 @@
                                 <p>
                                     Lagoona mentira piadosa
                                 </p>
-                                <p>
+                                <p class="grey">
                                     Барселона, Испания
                                 </p>
-                                <a href="" class="section-placing-btn">
+                                <p class="section-placing-btn">
+                                <a href="">
                                     Номера
                                 </a>
+                                </p>
                             </div>
                     </li>
                     <li class="section-placing-item">
                         <img src="../5-lesson/img/2-5.png">
                             <div class="placing-item-text">
                                 <p>
-                                    от <b>6 457 р</b> / ночь
+                                    <span class="grey"> от</span> <span class="big">6 457 р</span> / ночь
                                 <span class="section-placing-rating">
                                     <svg class="rating-star" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="13" viewBox="0 0 14 13"><metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?><x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        "><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:about=""/></rdf:RDF></x:xmpmeta><?xpacket end="w"?></metadata><image id="star_копия" data-name="star копия" width="14" height="13" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAMAAACuAq9NAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAWlBMVEX////pzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpMAAAAOnU9GAAAAHHRSTlMAArJZBNwBHXp11PfVyiMcJT5rludxYNh4CwrXpkJicAAAAAFiS0dEHesDcZEAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfkCxIWOQWqhPvGAAAAYElEQVQI103MSRKAIAADwQDigiII7ub/71QpKZxbXwZ4E1IKlBSpiipN6upD3bR8apv6QWd6fvVDB8tfFqMu0iPgTJZx78pn+nSeMqfEkBkSIzkvy0zGxHXbD+DcrxW4AWm8CrDOFBljAAAAAElFTkSuQmCC"/></svg>
                                     <svg class="rating-star" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="13" viewBox="0 0 14 13"><metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?><x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        "><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:about=""/></rdf:RDF></x:xmpmeta><?xpacket end="w"?></metadata><image id="star_копия" data-name="star копия" width="14" height="13" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAMAAACuAq9NAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAWlBMVEX////pzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpMAAAAOnU9GAAAAHHRSTlMAArJZBNwBHXp11PfVyiMcJT5rludxYNh4CwrXpkJicAAAAAFiS0dEHesDcZEAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfkCxIWOQWqhPvGAAAAYElEQVQI103MSRKAIAADwQDigiII7ub/71QpKZxbXwZ4E1IKlBSpiipN6upD3bR8apv6QWd6fvVDB8tfFqMu0iPgTJZx78pn+nSeMqfEkBkSIzkvy0zGxHXbD+DcrxW4AWm8CrDOFBljAAAAAElFTkSuQmCC"/></svg>
@@ -337,7 +346,7 @@
                                 <p>
                                     Lagoona empujar la creatividad
                                 </p>
-                                <p>
+                                <p class="grey">
                                     Барселона, Испания
                                 </p>
                                 <a href="" class="section-placing-btn">
@@ -349,7 +358,7 @@
                         <img src="../5-lesson/img/2-6.png">
                             <div class="placing-item-text">
                             <p>
-                                от <b>6 490 р</b> / ночь
+                                <span class="grey"> от</span> <span class="big">6 490 р</span> / ночь
                             <span class="section-placing-rating">
                                 <svg class="rating-star" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="13" viewBox="0 0 14 13"><metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?><x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        "><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:about=""/></rdf:RDF></x:xmpmeta><?xpacket end="w"?></metadata><image id="star_копия" data-name="star копия" width="14" height="13" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAMAAACuAq9NAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAWlBMVEX////pzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpMAAAAOnU9GAAAAHHRSTlMAArJZBNwBHXp11PfVyiMcJT5rludxYNh4CwrXpkJicAAAAAFiS0dEHesDcZEAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfkCxIWOQWqhPvGAAAAYElEQVQI103MSRKAIAADwQDigiII7ub/71QpKZxbXwZ4E1IKlBSpiipN6upD3bR8apv6QWd6fvVDB8tfFqMu0iPgTJZx78pn+nSeMqfEkBkSIzkvy0zGxHXbD+DcrxW4AWm8CrDOFBljAAAAAElFTkSuQmCC"/></svg>
                                 <svg class="rating-star" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="13" viewBox="0 0 14 13"><metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?><x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        "><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:about=""/></rdf:RDF></x:xmpmeta><?xpacket end="w"?></metadata><image id="star_копия" data-name="star копия" width="14" height="13" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAMAAACuAq9NAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAWlBMVEX////pzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpMAAAAOnU9GAAAAHHRSTlMAArJZBNwBHXp11PfVyiMcJT5rludxYNh4CwrXpkJicAAAAAFiS0dEHesDcZEAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfkCxIWOQWqhPvGAAAAYElEQVQI103MSRKAIAADwQDigiII7ub/71QpKZxbXwZ4E1IKlBSpiipN6upD3bR8apv6QWd6fvVDB8tfFqMu0iPgTJZx78pn+nSeMqfEkBkSIzkvy0zGxHXbD+DcrxW4AWm8CrDOFBljAAAAAElFTkSuQmCC"/></svg>
@@ -361,7 +370,7 @@
                             <p>
                                 Lagoona el retorno
                             </p>
-                            <p>
+                            <p class="grey">
                                 Барселона, Испания
                             </p>
                             <a href="" class="section-placing-btn">
@@ -373,7 +382,7 @@
                         <img src="../5-lesson/img/2-7.png">
                             <div class="placing-item-text">
                                 <p>
-                                    от <b>6 505 р</b> / ночь
+                                    <span class="grey"> от</span> <span class="big">6 505 р</span> / ночь
                                 <span class="section-placing-rating">
                                     <svg class="rating-star" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="13" viewBox="0 0 14 13"><metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?><x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        "><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:about=""/></rdf:RDF></x:xmpmeta><?xpacket end="w"?></metadata><image id="star_копия" data-name="star копия" width="14" height="13" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAMAAACuAq9NAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAWlBMVEX////pzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpMAAAAOnU9GAAAAHHRSTlMAArJZBNwBHXp11PfVyiMcJT5rludxYNh4CwrXpkJicAAAAAFiS0dEHesDcZEAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfkCxIWOQWqhPvGAAAAYElEQVQI103MSRKAIAADwQDigiII7ub/71QpKZxbXwZ4E1IKlBSpiipN6upD3bR8apv6QWd6fvVDB8tfFqMu0iPgTJZx78pn+nSeMqfEkBkSIzkvy0zGxHXbD+DcrxW4AWm8CrDOFBljAAAAAElFTkSuQmCC"/></svg>
                                     <svg class="rating-star" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="13" viewBox="0 0 14 13"><metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?><x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        "><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:about=""/></rdf:RDF></x:xmpmeta><?xpacket end="w"?></metadata><image id="star_копия" data-name="star копия" width="14" height="13" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAMAAACuAq9NAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAWlBMVEX////pzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpMAAAAOnU9GAAAAHHRSTlMAArJZBNwBHXp11PfVyiMcJT5rludxYNh4CwrXpkJicAAAAAFiS0dEHesDcZEAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfkCxIWOQWqhPvGAAAAYElEQVQI103MSRKAIAADwQDigiII7ub/71QpKZxbXwZ4E1IKlBSpiipN6upD3bR8apv6QWd6fvVDB8tfFqMu0iPgTJZx78pn+nSeMqfEkBkSIzkvy0zGxHXbD+DcrxW4AWm8CrDOFBljAAAAAElFTkSuQmCC"/></svg>
@@ -385,7 +394,7 @@
                                 <p>
                                     Lagoona enfermo terminó
                                 </p>
-                                <p>
+                                <p class="grey">
                                     Барселона, Испания
                                 </p>
                                 <a href="" class="section-placing-btn">
@@ -397,7 +406,7 @@
                         <img src="../5-lesson/img/2-8.png">
                             <div class="placing-item-text">
                                 <p>
-                                    от <b>6 824 р</b> / ночь
+                                    <span class="grey"> от </span> <span class="big">6 824 р</span> / ночь
                                 <span class="section-placing-rating">
                                     <svg class="rating-star" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="13" viewBox="0 0 14 13"><metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?><x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        "><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:about=""/></rdf:RDF></x:xmpmeta><?xpacket end="w"?></metadata><image id="star_копия" data-name="star копия" width="14" height="13" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAMAAACuAq9NAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAWlBMVEX////pzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpMAAAAOnU9GAAAAHHRSTlMAArJZBNwBHXp11PfVyiMcJT5rludxYNh4CwrXpkJicAAAAAFiS0dEHesDcZEAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfkCxIWOQWqhPvGAAAAYElEQVQI103MSRKAIAADwQDigiII7ub/71QpKZxbXwZ4E1IKlBSpiipN6upD3bR8apv6QWd6fvVDB8tfFqMu0iPgTJZx78pn+nSeMqfEkBkSIzkvy0zGxHXbD+DcrxW4AWm8CrDOFBljAAAAAElFTkSuQmCC"/></svg>
                                     <svg class="rating-star" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="13" viewBox="0 0 14 13"><metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?><x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        "><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:about=""/></rdf:RDF></x:xmpmeta><?xpacket end="w"?></metadata><image id="star_копия" data-name="star копия" width="14" height="13" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAMAAACuAq9NAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAWlBMVEX////pzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpPpzpMAAAAOnU9GAAAAHHRSTlMAArJZBNwBHXp11PfVyiMcJT5rludxYNh4CwrXpkJicAAAAAFiS0dEHesDcZEAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfkCxIWOQWqhPvGAAAAYElEQVQI103MSRKAIAADwQDigiII7ub/71QpKZxbXwZ4E1IKlBSpiipN6upD3bR8apv6QWd6fvVDB8tfFqMu0iPgTJZx78pn+nSeMqfEkBkSIzkvy0zGxHXbD+DcrxW4AWm8CrDOFBljAAAAAElFTkSuQmCC"/></svg>
@@ -409,10 +418,10 @@
                                 <p>
                                     Lagoona suerte siguió siempre
                                 </p>
-                                <p>
+                                <p class="grey">
                                     Барселона, Испания
                                 </p>
-                                <a href="" class="section-placing-button">
+                                <a href="" class="section-placing-btn">
                                     Номера
                                 </a>
                             </div>
@@ -420,7 +429,7 @@
                     <li class="section-placing-item">
                         <div class="placing-item-text">
                             <a href="" class="item-text-variants">
-                                Посмотреть все варианты &#8250
+                                <span class="big">Посмотреть все варианты &#8250</span>
                             </a>
                         </div>
                     </li>
@@ -440,24 +449,28 @@
                             Москва, улица Юности, дом 5 строение 4, офис 2
                         </span>
                     </p>
+                    <hr>
                     <p class="conacts-info">
                         Телефоны
                         <span class="contacts-details">
                             +7 (499) 535-64-34 <br> +7 (495) 005-05-44
                         </span>
                     </p>
+                    <hr>
                     <p class="conacts-info">
                         E-mail
                         <span class="contacts-details">
                             lg.oona@mail.ru по вопросам бронирования <br> hotels.ln@mail.ru по вопросам сотрудничества
                         </span>
                     </p>
+                    <hr>
                     <p class="conacts-info">
                         График
                         <span class="contacts-details">
                             Понедельник - пятница, с 10:0 до 19:00
                         </span>
                     </p>
+                    <hr>
                     <a href="" class="section-placing-btn">
                         Построить маршрут
                     </a>
@@ -468,11 +481,11 @@
                         Напишите нам
                     </h2>
                     <div class="contacts-question">
-                        <form action="" method="POST">
-                            <input type="text" name="name" value="Имя"> <br>
-                            <input type="tel" name="phone" value="+7"> <br>
-                            <textarea name="Сообщение" value="Сообщение" rows="10" cols="48"></textarea> <br>
-                            <input type="submit" name="Отправить" value="Отправить">
+                        <form action="https://jsonplaceholder.typicode.com/posts" method="POST">
+                            <input type="text" name="name" placeholder="Имя" class="contacts-question-item"> <br>
+                            <input type="tel" name="phone" placeholder="+7" class="contacts-question-item"> <br>
+                            <textarea name="Сообщение" rows="5" cols="30" placeholder="Сообщение..." class="contacts-question-item"></textarea> <br>
+                            <input type="submit" name="Отправить" value="Отправить" class="contacts-question-btn">
                         </form>
                     </div>
                 </div>

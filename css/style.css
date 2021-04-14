@@ -1,20 +1,10 @@
-*
-{
-    box-sizing: border-box;
-}
-
-body
-{
-    background-color: #f1f1f1;
-    font-size:  16px;
-}
-
 @font-face
 {
     font-family: 'Muller';
     font-family: 'Muller-Bold';
-    src: url(../fonts/MullerBold.woff) format('woff'),
-    url(../fonts/MullerBold.woff2) format('woff2');
+    src: url('../fonts/MullerBold.woff2') format('woff2'),
+    url('../fonts/MullerBold.woff') format('woff');
+    font-display: swap;
     font-style: normal;
     font-weight: 700;
 }
@@ -23,8 +13,9 @@ body
 {
     font-family: 'Muller';
     font-family: 'Muller-Light';
-    src: url(../fonts/MullerLight.woff) format('woff'),
-    url(../fonts/MullerLight.woff2) format('woff2');
+    src: url('../fonts/MullerLight.woff2') format('woff2'),
+    url('../fonts/MullerLight.woff') format('woff');
+    font-display: swap;
     font-style: normal;
     font-weight: 300;
 }
@@ -33,8 +24,9 @@ body
 {
     font-family: 'Muller';
     font-family: 'Muller-Medium';
-    src: url(../fonts/MullerMedium.woff) format('woff'),
-    url(../fonts/MullerMedium.woff2) format('woff2');
+    src: url('../fonts/MullerMedium.woff2') format('woff2'),
+    url('../fonts/MullerMedium.woff') format('woff');
+    font-display: swap;
     font-style: normal;
     font-weight: 500;
 }
@@ -43,17 +35,44 @@ body
 {
     font-family: 'Muller';
     font-family: 'Muller-Regular';
-    src: url(../fonts/MullerRegular.woff) format('woff'),
-    url(../fonts/MullerRegular.woff2) format('woff2');
+    src: url('../fonts/MullerRegular.woff2') format('woff2'),
+    url('../fonts/MullerRegular.woff') format('woff');
+    font-display: swap;
     font-style: normal;
     font-weight: 400;
 }
 
-a
+strong
 {
+    font-weight: bold;
+}
+
+.grey
+{
+    color: #797979;
+}
+
+.big
+{
+    font-size: x-large;
+    font-family: 'Muller-Bold';
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Muller', sans-serif;
+    background-color: #f1f1f1;
+  }
+  
+  a {
+    color: inherit;
     text-decoration: none;
     color: #d1a54c;
-}
+  }
 
 ul 
 {
@@ -76,10 +95,6 @@ p
 {
     line-height: 25px;
 }
-/*
-html {
-    font-family: sans-serif;
-}*/
 
 .container
 {
@@ -121,9 +136,8 @@ html {
 
 .header-left-telephone
 {
-    font-size: 20px;
     margin-left: 25px;
-
+    font-size: 20px;
 }
 
 .heading-tel
@@ -139,17 +153,23 @@ html {
 .heading-bottom
 {
     display: flex;
-    height: 72px;
-    background-color: white;
-    border-radius: 15px;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    height: 72px;
+    border-radius: 10px;
+    background-color: white;
 
 }
 
 .heading-bottom-box
 {
     margin-right: 22px;
+    padding-left: 20px;
+    min-width: 340px;
+    height: 45px;
+    border: 0;
+    border-radius: 10px;
+    background-color: #f1f1f1;
 }
 
 .heading-nav-list
@@ -183,10 +203,39 @@ html {
     width: 530px;
 }
 
-.section-form-list
+.section-form-item
 {
     margin-top: 25px;
-    max-width: 520px;
+    padding-left: 20px;
+    min-width: 520px;
+    min-height: 65px;
+    border: 0;
+    border-radius: 10px;
+}
+
+.section-form-item:nth-child(5)
+{
+    margin-bottom: 25px;
+}
+
+.section-btn-submit
+{
+    padding: 25px;
+    border: 0;
+    border-radius: 10px;
+    background-color: #cc9933;
+    color: white;
+}
+
+.section-info-request
+{
+    margin-left: 30px;
+    color: #bcbcbc;
+}
+
+.info-request-color
+{
+    color: #cc9933;
 }
 
 .section-sale
@@ -197,21 +246,21 @@ html {
     flex-wrap: wrap;
     width: 590px;
     height: 527px;
-    background-image: url(../img/22.png);
-    border-radius: 15px;
+    border-radius: 10px;
     padding: 0 216px 40px 40px;
+    background-image: url(../img/22.png);
 }
 
 .section-sale-price
 {
-    color: #898583;
     margin-right: 40px;
+    color: #898583;
 }
 .section-sale-heading-box
 {
-    color: white;
-    font-size: 50px;
     margin-bottom: 0;
+    font-size: 50px;
+    color: white;
 }
 
 /* section-description */
@@ -222,6 +271,10 @@ html {
     margin-top: 65px;
 }
 
+.section-description-text
+{
+    color: #797979;
+}
 
 /* section-services */
 
@@ -238,12 +291,12 @@ html {
 }
 .section-services-item
 {
-    background-color: white;
     width: 560px;
     height: 325px;
     margin-top: 25px;
     margin-right: 10px;
-    border-radius: 15px;
+    border-radius: 10px;
+    background-color: white;
 }
 
 /* ADVANT */
@@ -267,10 +320,10 @@ html {
     flex-wrap: wrap;
     height: 280px;
     max-width: 280px;
-    background-color: white;
-    border-radius: 15px;
+    border-radius: 10px;
     margin-top: 25px;
     padding: 40px;
+    background-color: white;
 }
 
 /* PLACING */
@@ -290,10 +343,10 @@ html {
 .section-placing-item
 {
     margin-top: 25px;
-    background-color: white;
     height: 440px;
     width: 370px;
-    border-radius: 15px;
+    border-radius: 10px;
+    background-color: white;
 }
 
 .placing-item-text
@@ -303,15 +356,16 @@ html {
 
 .section-placing-item:nth-child(9)
 {
-    background-image: url(../img/2-9.png);
     display: flex;
     flex-direction: row;
     align-items: flex-end;
     padding-bottom: 55px;
+    background-image: url(../img/2-9.png);
 }
 
 .item-text-variants
 {
+    margin-bottom: auto;
     color: white;
 }
 
@@ -319,20 +373,20 @@ html {
 
 .contacts-container
 {
-    height: 690px; 
-    margin-top: 65px;
     display: flex;
+    min-height: 690px; 
+    margin-top: 65px;
 }
 .contacts-adress-info
 {
     padding: 45px;
+    border-radius: 10px;
     background-color: white;
-    border-radius: 15px;
 }
 .contacts-adress
 {
     max-width: 472px;
-    height: 620px;
+    min-height: 620px;
     margin-right: 180px;
 }
 
@@ -345,9 +399,43 @@ html {
 {
     margin-left: 40px;
 }
+
+
+.section-placing-btn
+{
+    border-color: #cc9933;
+    color: red;
+}
+
 .contacts-request
 {
-    width: 350px;
+    width: 390px;
+}
+
+.contacts-question-item
+{
+    min-width: 380px;
+    height: 70px;
+    margin-bottom: 25px;
+    padding-left: 20px;
+    padding-top: 5px;
+    border: 0;
+    border-radius: 10px;
+}
+
+.services-link-main
+{
+    padding: 10px 90px 40px 40px;
+}
+
+.contacts-question-btn
+{
+    min-width: 380px;
+    height: 70px;
+    border: 0   ;
+    border-radius: 10px;
+    background-color: #cc9933;
+    color: white;
 }
 /* Footer */
     footer
@@ -360,8 +448,11 @@ html {
 .footer-container
 {
     display: flex;
-    border-radius: 10px;
     justify-content: space-between;
+    padding: 40px 48px 50px 48px;
+    line-height: 20px;
+    margin-bottom: 55px;
+    border-radius: 10px;
     background-color: #333333;
     background-image: url(../img/Слой.png);
     background-repeat: no-repeat;
@@ -369,9 +460,6 @@ html {
     background-position-x: 728px;
     background-position-y: bottom;
     color: #e4e4e4;
-    padding: 40px 48px 50px 48px;
-    line-height: 20px;
-    margin-bottom: 55px;
 }
 
 .footer-info
