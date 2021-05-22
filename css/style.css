@@ -304,8 +304,10 @@ p
     flex-wrap: wrap;
     margin-top: 30px;
 }
+
 .section-services-item
 {
+    flex: 1 1 40%;
     width: 560px;
     height: 325px;
     margin-top: 25px;
@@ -316,10 +318,11 @@ p
 
 /* ADVANT */
 
-.advant-container
+.section-advant
 {
-    height: 655px;
+    /* height: 655px; */
     margin-top: 60px;
+    margin-bottom: 60px;
 }
 
 .section-adv-list
@@ -332,8 +335,9 @@ p
 .section-adv-item
 {
     display: flex;
+    flex: 1 1 40%;
     flex-wrap: wrap;
-    height: 280px;
+    max-height: 280px;
     max-width: 280px;
     border-radius: 10px;
     margin-top: 25px;
@@ -357,7 +361,9 @@ p
 
 .section-placing-item
 {
+    flex: 1 1 28%;
     margin-top: 25px;
+    margin-right: 15px;
     height: 440px;
     width: 370px;
     border-radius: 10px;
@@ -453,7 +459,7 @@ p
     color: white;
 }
 /* Footer */
-    footer
+footer
 {
     height: 340px;
     margin-top: 25px;
